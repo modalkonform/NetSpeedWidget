@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NetSpeedWidget/NetSpeedWidget.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/NetSpeedWidget.Tests/NetSpeedWidget.Tests.csproj" />
+  </Folder>
+</Solution>
