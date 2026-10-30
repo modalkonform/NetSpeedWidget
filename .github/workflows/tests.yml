@@ -15,4 +15,5 @@ jobs:
       - uses: actions/setup-dotnet@v6
         with:
           dotnet-version: 10.0.x
-      - run: dotnet test NetSpeedWidget.slnx
+      # The logger writes the test results to the job's step summary.
+      - run: dotnet test NetSpeedWidget.slnx --logger GitHubActions
