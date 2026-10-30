@@ -10,10 +10,9 @@ jobs:
   test:
     # Windows-only: the app uses Windows Forms and the tests touch the registry.
     runs-on: windows-latest
+    # No setup-dotnet: the runner image already ships the .NET 10 SDK, and
+    # downloading the newest patch took ~40 s per run.
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-dotnet@v6
-        with:
-          dotnet-version: 10.0.x
       # The logger writes the test results to the job's step summary.
       - run: dotnet test NetSpeedWidget.slnx --logger GitHubActions
