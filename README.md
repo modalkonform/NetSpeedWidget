@@ -21,6 +21,11 @@ Run `NetSpeedWidget.exe`. Right-click the numbers for:
 
 Unit and font size are saved in `%APPDATA%\NetSpeedWidget\settings.json`.
 
+**Start with Windows** stores the exe's full path. If you move the exe (or its
+folder), the widget no longer starts at sign-in, although the menu still shows
+the option as checked. Start the exe from its new location and click **Start
+with Windows** twice (off, then on) to store the new path.
+
 ## Build
 
 Requires the .NET 10 SDK.
